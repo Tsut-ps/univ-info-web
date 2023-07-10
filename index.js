@@ -13,7 +13,7 @@ const getMimeType = (path) => {
         ".html": "text/html",
         ".css": "text/css",
         ".js": "text/javascript",
-        ".jpg": "image/jpeg",
+        ".jpeg": "image/jpeg",
         ".png": "image/png",
         ".svg": "image/svg+xml"
     };

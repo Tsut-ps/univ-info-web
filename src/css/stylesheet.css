@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* ヘッダー高さ調整 */
+header, nav {
+    height: 80px;
+}
+
+.main-visual {
+    height: calc(100vh - 80px);
+    background: url(../img/AdobeStock_142976730.jpeg);
+    background-size: cover;
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 80%);*/
+}
+.main-visual div {
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+}
