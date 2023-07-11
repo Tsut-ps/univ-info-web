@@ -1,7 +1,12 @@
 Vue.createApp({
-	data: function() {
+	data() {
 		return {
-			message: "あああああ"
+			messageraw: "あああ@ああ"
 		};
+	},
+	computed: {
+		message() {
+			return this.messageraw.split('@')[0];
+		}
 	}
 }).mount('#app');
