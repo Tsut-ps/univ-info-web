@@ -30,10 +30,15 @@
     </nav>
   </header>
   <main>
-    <div class="main-visual">
-      <div>
-        <h1>タイトル</h1>
-      </div>
+    <div id="visual-app"> <!-- メインビジュアル -->
+      <transition appear name="visual">
+      <!-- appearで初回表示時ふんわり表示 / nameでCSSの"visual"欄のアニメーションを適用 -->
+        <div id="main-visual">
+          <div>
+            <h1>タイトル</h1>
+          </div>
+        </div>
+      </transition>
     </div>
     <article>
       <div>
@@ -107,6 +112,7 @@
       </div>
       <div id="app">
         <p>{{ message }}</p>
+        <my-component></my-component>
       </div>
     </article>
   </main>
