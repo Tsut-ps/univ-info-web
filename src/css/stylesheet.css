@@ -1,15 +1,28 @@
 @charset "UTF-8";
 
+/* フォント設定 */
+main {
+    font-family: 'Yu Gothic UI', 'Helvetica Neue','Helvetica','Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,sans-serif;
+}
+
+/* 見出し 太字のリセット(清潔感を出すため) */
+h1, h2, h3, h4 {
+    font-weight: 400;
+}
+
 /* ヘッダー高さ調整 */
 header, nav {
     height: 80px;
 }
 
 #main-visual {
+    /* 端末の画面の高さに合わせてメインビジュアルの高さを調整 */
     height: calc(100vh - 80px);
-    background: url(../img/AdobeStock_142976730.jpeg);
-    background-size: cover;
-    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 80%);*/
+    /* 画面横いっぱいに表示 */
+    width: 100%;
+    /* 画像の縦横比が歪まないように */
+    object-fit: cover;
+    margin-bottom: 80px;
 }
 #main-visual div {
     position: absolute;
@@ -21,6 +34,14 @@ header, nav {
 .visual-enter-active, .visual-leave-active {
     transition: opacity 1s;
 }
+.visual-leave-active {
+    position: absolute;
+}
 .visual-enter-from, .visual-leave-to {
     opacity: 0.0;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: .5em;
 }

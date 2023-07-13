@@ -33,85 +33,106 @@
   </header>
   <main>
     <div id="visual-app"> <!-- メインビジュアル -->
-      <transition appear name="visual">
       <!-- appearで初回表示時ふんわり表示 / nameでCSSの"visual"欄のアニメーションを適用 -->
-        <div id="main-visual">
-          <div>
-            <h1>タイトル</h1>
-          </div>
-        </div>
+      <transition appear name="visual">
+        <!-- currentImageの更新をkeyとしてトリガー(画像変更時を検知する) -->
+        <!-- スクリプトで画像のイメージを6秒ごとに変更(詳しい動きはscript.jsを参照) -->
+        <img id="main-visual" v-bind:key="currentImage" :src="currentImage">
       </transition>
     </div>
     <article>
-      <div>
-        <div class="subtitle">ABOUT</div>
-        <h2>デジタルの力で、社会を変える。<br>メディアの力で、社会を想像する。</h2>
-        <p>映像・音楽・画像のデジタル技術を集結させ、<br>コンピュータを通して情報をデザインする学問です。</p>
-      </div>
-      <div>
-        <div class="subtitle">FEATURE</div>
-        <h2>学科の特色</h2>
-        <div></div>
-      </div>
-      <div>
-        <div class="subtitle">CURRICULUM</div>
-        <h2>カリキュラム</h2>
-        <div></div>
-        <div>
-          <div class="subtitle">CAREER</div>
-          <h3>卒業生の進路</h2>
-          <div></div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div class="subtitle">1年生</div>
-          <h2>デザインの基礎を学ぶ</h2>
-          <div></div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div class="subtitle">2年生</div>
-          <h2>クリエイティブな表現を学ぶ</h2>
-          <div></div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div class="subtitle">3年生</div>
-          <h2>学びを応用・実践する</h2>
-          <div></div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div class="subtitle">4年生</div>
-          <h2>プロのクリエイターへ</h2>
-          <div></div>
-        </div>
-      </div>
+      <div class="container">
+        <div class="row">
 
-      <div>
-        <div class="subtitle">NEWS</div>
-        <h2>最新情報</h2>
-        <div></div>
+          <div class="text-center mb-5">
+            <p class="subtitle">ABOUT</p>
+            <h2>デジタルの力で、社会を変える。<br>メディアの力で、社会を想像する。</h2>
+            <p>映像・音楽・画像のデジタル技術を集結させ、<br>コンピュータを通して情報をデザインする学問です。</p>  
+          </div>
+          <div class="text-center mb-5">
+            <p class="subtitle">FEATURE</p>
+              <h2>学科の特色</h2>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <p class="subtitle">CURRICULUM</p>
+            <h2>カリキュラム</h2>
+            <div></div>
+            <div>
+              <p class="subtitle">CAREER</p>
+              <h3>卒業生の進路</h2>
+              <div></div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div>
+                <p class="subtitle">1年生</p>
+                <h2>デザインの基礎を学ぶ</h2>
+                <div></div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <p class="subtitle">2年生</p>
+                <h2>クリエイティブな表現を学ぶ</h2>
+                <div></div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <p class="subtitle">3年生</p>
+                <h2>学びを応用・実践する</h2>
+                <div></div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <p class="subtitle">4年生</p>
+                <h2>プロのクリエイターへ</h2>
+                <div></div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="subtitle">NEWS</p>
+            <h2>最新情報</h2>
+            <div></div>
+          </div>
+          <div>
+            <p class="subtitle">EVENTS</p>
+            <h2>イベント情報</h2>
+            <div></div>
+          </div>
+          <div>
+            <p class="subtitle">LAB</p>
+            <h2>研究室</h2>
+            <div></div>
+          </div>
+
+          <div>
+            <p class="subtitle">GRADUATE SCHOOL</p>
+            <h2>大学院</h2>
+            <div></div>
+          </div>
+
+        </div>
       </div>
       <div>
-        <div class="subtitle">EVENTS</div>
-        <h2>イベント情報</h2>
-        <div></div>
+        
       </div>
-      <div>
-        <div class="subtitle">LAB</div>
-        <h2>研究室</h2>
-        <div></div>
-      </div>
-      <div>
-        <div class="subtitle">GRADUATE SCHOOL</div>
-        <h2>大学院</h2>
-        <div></div>
-      </div>
+      
       <div id="app">
         <p>{{ message }}</p>
         <my-component></my-component>
