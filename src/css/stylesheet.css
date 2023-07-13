@@ -43,10 +43,13 @@ header, nav {
 
 .subtitle {
     font-size: 1.2em;
+    padding-top: 2.5em;
     margin-bottom: .5em;
 }
 
 
 #feature img {
     clip-path: circle(42%);
+    background-size: cover;
+    height: min(25vw, 300px);
 }

@@ -1,25 +1,5 @@
 // Vue.jsによるアプリケーションの作成
 
-// テストアプリケーション
-Vue.createApp({
-	data() {
-		return {
-			messageraw: "あああ@ああ",
-			name: "いいいいい"
-		};
-	},
-	computed: {
-		message() {
-			return this.messageraw.split('@')[0];
-		}
-	},
-	components: {
-		'my-component': {
-			template: '<p>aaa{{ name }}</p>'
-		}
-	}
-}).mount('#app');
-
 // 画像のイメージを6秒ごとに変更するApp
 Vue.createApp({
 	data() {
