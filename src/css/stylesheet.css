@@ -45,3 +45,8 @@ header, nav {
     font-size: 1.2em;
     margin-bottom: .5em;
 }
+
+
+#feature img {
+    clip-path: circle(42%);
+}

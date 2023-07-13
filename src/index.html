@@ -43,90 +43,87 @@
     <article>
       <div class="container">
         <div class="row">
-
           <div class="text-center mb-5">
             <p class="subtitle">ABOUT</p>
             <h2>デジタルの力で、社会を変える。<br>メディアの力で、社会を想像する。</h2>
             <p>映像・音楽・画像のデジタル技術を集結させ、<br>コンピュータを通して情報をデザインする学問です。</p>  
           </div>
-          <div class="text-center mb-5">
-            <p class="subtitle">FEATURE</p>
-              <h2>学科の特色</h2>
+        </div>
+        <div class="row text-center mb-5" id="feature">
+          <p class="subtitle">FEATURE</p>
+          <h2>学科の特色</h2>
+          <!-- データcelsの文だけ繰り返して表示 -->
+          <template v-for="cel in cels">
             <div class="col-xs-12 col-sm-6 col-md-4">
-              
+              <div class="text-center">
+                <!-- 画像を表示 -->
+                <img :src="cel.icon">
+                <!-- celのtitleの内容を表示 -->
+                <h3>{{ cel.title }}</h3>
+                <!-- 改行を認識させるためにv-htmlでhtmlとして、celのtextを出力 -->
+                <p v-html="cel.text"></p>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-
-            </div>
-          </div>
-
-          <div class="mb-5">
-            <p class="subtitle">CURRICULUM</p>
-            <h2>カリキュラム</h2>
+          </template>
+        </div>
+        <div class="mb-5">
+          <p class="subtitle">CURRICULUM</p>
+          <h2>カリキュラム</h2>
+          <div></div>
+          <div>
+            <h3>卒業生の進路</h2>
             <div></div>
+          </div>
+        </div>
+        <div>
+          <div>
             <div>
-              <p class="subtitle">CAREER</p>
-              <h3>卒業生の進路</h2>
+              <p class="subtitle">1年生</p>
+              <h2>デザインの基礎を学ぶ</h2>
               <div></div>
             </div>
           </div>
-
           <div>
             <div>
-              <div>
-                <p class="subtitle">1年生</p>
-                <h2>デザインの基礎を学ぶ</h2>
-                <div></div>
-              </div>
+              <p class="subtitle">2年生</p>
+              <h2>クリエイティブな表現を学ぶ</h2>
+              <div></div>
             </div>
+          </div>
+          <div>
             <div>
-              <div>
-                <p class="subtitle">2年生</p>
-                <h2>クリエイティブな表現を学ぶ</h2>
-                <div></div>
-              </div>
+              <p class="subtitle">3年生</p>
+              <h2>学びを応用・実践する</h2>
+              <div></div>
             </div>
+          </div>
+          <div>
             <div>
-              <div>
-                <p class="subtitle">3年生</p>
-                <h2>学びを応用・実践する</h2>
-                <div></div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <p class="subtitle">4年生</p>
-                <h2>プロのクリエイターへ</h2>
-                <div></div>
-              </div>
+              <p class="subtitle">4年生</p>
+              <h2>プロのクリエイターへ</h2>
+              <div></div>
             </div>
           </div>
-
-          <div>
-            <p class="subtitle">NEWS</p>
-            <h2>最新情報</h2>
-            <div></div>
-          </div>
-          <div>
-            <p class="subtitle">EVENTS</p>
-            <h2>イベント情報</h2>
-            <div></div>
-          </div>
-          <div>
-            <p class="subtitle">LAB</p>
-            <h2>研究室</h2>
-            <div></div>
-          </div>
-
-          <div>
-            <p class="subtitle">GRADUATE SCHOOL</p>
-            <h2>大学院</h2>
-            <div></div>
-          </div>
-
+        </div>
+        <div>
+          <p class="subtitle">NEWS</p>
+          <h2>最新情報</h2>
+          <div></div>
+        </div>
+        <div>
+          <p class="subtitle">EVENTS</p>
+          <h2>イベント情報</h2>
+          <div></div>
+        </div>
+        <div>
+          <p class="subtitle">LAB</p>
+          <h2>研究室</h2>
+          <div></div>
+        </div>
+        <div>
+          <p class="subtitle">GRADUATE SCHOOL</p>
+          <h2>大学院</h2>
+          <div></div>
         </div>
       </div>
       <div>

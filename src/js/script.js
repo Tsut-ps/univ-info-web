@@ -42,3 +42,30 @@ Vue.createApp({
 		}, 6000);	// 6000ミリ秒(6秒)ごとに画像を切り替える
 	},
 }).mount('#visual-app');	// visual-appというidを持つ要素に適用する
+
+
+// 学科の特色の3つのアイコン表示
+Vue.createApp({
+	data() {
+		return {
+			cels: [
+				{
+					icon: './img/icon-1.png',
+					title: 'デジタル×クリエイティブ',
+					text: `情報メディアに特化し<br>創造力と表現力を伸ばす学科。`
+				},
+				{
+					icon: './img/icon-2.png',
+					title: '演習重視',
+					text: '先進的なカリキュラムでスキルを学び<br>アクティブラーニングで学びを深める。'
+				},
+				{
+					icon: './img/icon-3.png',
+					title: '環境の充実',
+					text: 'プロが現場で使っている環境を<br>自由に使える環境を構築。'
+				},
+			]
+		}
+	}
+}).mount('#feature');
+
