@@ -6,8 +6,8 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <!-- Animate.css -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+  <!-- 約物を半角にする -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp_s-narrow.min.css">
   <!-- Original -->
   <link rel="stylesheet" href="./css/stylesheet.css">
   <link rel="icon" href="./img/logo/TIDU_logo.png">
@@ -16,17 +16,17 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-        <div class="container-fluid">
+        <div class="container-xxl">
             <h1 class="d-flex justify-content-center mb-0 me-auto">
               <a href="/" class="navbar-brand">
                 <img src="./img/logo/TIDU_logo.png">
-                <span class="d-none d-md-inline-block"><img src="./img/logo/TIDU_text-logo.png" alt="東京情芸大学"></span>
-                <img src="./img/logo/ID-DM_logo.png" alt="情報デザイン学部デジタルメディア学科" class="ms-1 ps-2 border-start">
+                <img src="./img/logo/TIDU_text-logo.png" alt="東京情芸大学" class="d-none d-md-inline-block me-1 pe-2 border-end">
+                <img src="./img/logo/ID-DM_logo.png" alt="情報デザイン学部デジタルメディア学科">
               </a>
             </h1>
-            <div class="d-flex justify-content-center" style="height: 48px;">
-              <!-- location.href で ページ遷移 -->
-              <button class="btn btn-outline-success h-100" onclick="location.href='document-request.html'" role="button">資料請求</button>
+            <div class="d-flex justify-content-center" style="height: 52px;">
+              <!-- 高さ100%で真ん中に合わせる、location.hrefでページ遷移、スマホ表示のときのみ改行 -->
+              <button class="btn btn-outline-success h-100 d-flex align-items-center" onclick="location.href='document-request.html'" role="button">資料<br class="d-sm-none">請求</button>
             </div>
         </div>
     </nav>
@@ -44,17 +44,19 @@
       <div class="container">
         <div class="row">
           <div class="text-center">
-            <p class="subtitle">ABOUT</p>
+            <span class="subtitle">ABOUT</span>
             <h2>デジタルの力で、社会を変える。<br>メディアの力で、社会を想像する。</h2>
             <p>映像・音楽・画像のデジタル技術を集結させ、<br>コンピュータを通して情報をデザインする学問です。</p>  
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="row text-center mb-5" id="feature">
-          <p class="subtitle">FEATURE</p>
+          <span class="subtitle">FEATURE</span>
           <h2>学科の特色</h2>
-          <!-- データcelsの文だけ繰り返して表示 -->
+          <!-- [Vue.js] v-forを使ってデータcelsの文だけ繰り返して表示 -->
           <template v-for="cel in cels">
-            <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="col-xs-12 col-sm-4 col-md-4">
               <div class="text-center">
                 <!-- 画像を表示 -->
                 <img :src="cel.icon">
@@ -67,69 +69,73 @@
           </template>
         </div>
       </div>
-      <div class="bg-light">
+      <!-- 背景をグレーにする -->
+      <div class="bg-light py-5">
         <div class="container">
-          <div class="pb-5">
-            <p class="subtitle">CURRICULUM</p>
-            <h2>カリキュラム</h2>
-            <div></div>
-            <div>
-              <h3>卒業生の進路</h2>
-              <div></div>
+          <span class="subtitle">CURRICULUM</span>
+          <h2>カリキュラム</h2>
+          <p class="mb-5">グラフィックデザイン、3DCG、UI/UXデザイン、<br class="d-none d-md-inline-block">
+            映像、モーショングラフィックス、アニメーションを中心としたカリキュラム構成。</p>
+          <div class="bordered-card rounded-3">
+            <span>主な就職先</span>
+            <span class="subtitle">広告・デザイン</span>
+            <p>株式会社あああ、株式会社いいい、株式会社ううう、株式会社えええ、株式会社おおお</p>
+            <span class="subtitle">ITサービス</span>
+            <p>株式会社あああ、株式会社いいい、株式会社ううう、株式会社えええ、株式会社おおお</p>
+            <span class="subtitle">情報機器・メーカー</span>
+            <p>株式会社あああ、株式会社いいい、株式会社ううう、株式会社えええ、株式会社おおお</p>
+          </div>
+        </div>
+      </div>
+      <!-- [Vue.js] 年次ごとに繰り返して表示(1～4年次) -->
+      <div class="container" id="year">
+        <div v-for="year in years">
+          <div class="row my-5">
+            <div class="col-xs-12 col-sm-3 col-md-3">
+              <img :src="year.image" :alt="year.alt" class="w-100 rounded-3 overflow-hidden mb-4">
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9">
+              <p class="badge rounded-pill bg-dark px-3 py-2">{{ year.subtitle }}</p>
+              <h2>{{ year.title }}</h2>
+              <p>{{ year.text }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="bordered-card rounded-3 mb-5">
+          <span>取得できる資格</span>
+          <p>中学校教諭一種免許状（情報/美術）、高等学校教諭一種免許状（情報）、<br class="d-none d-md-inline-block">情報処理技術者試験（基本/応用）、CGクリエイター検定、CGエンジニア検定、Webデザイナー検定、マルチメディア検定</p>
+        </div>
+      </div>
+      <div class="bg-light py-5">
+        <div class="container">
+          <div class="my-2 rounded-3">
+            <span class="subtitle">NEWS</span>
+            <h2>最新情報</h2>
+            <div class="row">
+              <div class="col-xs-6 col-sm-3 col-md-2 col-xl-1 border-end">2023.07.13</div>
+              <div class="col-xs-6 col-sm-3 col-md-2 col-xl-1">イベント</div>
+              <div class="col-xs-12 col-sm-6 col-md-10">きになる研究室は？ 8月の 「オープンキャンパス」 にて一般公開される〝研究室〟を、先行してWebで紹介中！</div>
             </div>
           </div>
         </div>
       </div>
       <div class="container">
         <div>
-          <div>
-            <div>
-              <p class="subtitle">1年生</p>
-              <h2>デザインの基礎を学ぶ</h2>
-              <div></div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p class="subtitle">2年生</p>
-              <h2>クリエイティブな表現を学ぶ</h2>
-              <div></div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p class="subtitle">3年生</p>
-              <h2>学びを応用・実践する</h2>
-              <div></div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p class="subtitle">4年生</p>
-              <h2>プロのクリエイターへ</h2>
-              <div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div>
-          <p class="subtitle">NEWS</p>
-          <h2>最新情報</h2>
-          <div></div>
-        </div>
-        <div>
-          <p class="subtitle">EVENTS</p>
+          <span class="subtitle">EVENTS</span>
           <h2>イベント情報</h2>
           <div></div>
         </div>
+      </div>
+      <div class="container">
         <div>
-          <p class="subtitle">LAB</p>
+          <span class="subtitle">LAB</span>
           <h2>研究室</h2>
           <div></div>
         </div>
+      </div>
+      <div class="container">
         <div>
-          <p class="subtitle">GRADUATE SCHOOL</p>
+          <span class="subtitle">GRADUATE SCHOOL</span>
           <h2>大学院</h2>
           <div></div>
         </div>

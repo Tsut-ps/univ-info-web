@@ -2,7 +2,17 @@
 
 /* フォント設定 */
 main {
-    font-family: 'Yu Gothic UI', 'Helvetica Neue','Helvetica','Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,sans-serif;
+    font-family: 'YakuHanJPs_Narrow', 'Yu Gothic UI', 'Helvetica Neue','Helvetica','Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,sans-serif;
+}
+
+/* Bootstrapの色を改変 */
+.bg-light {
+    background-color: #f4f4f4 !important;
+}
+
+/* 文字サイズをブラウザ標準の16pxから少し大きめの(18/16)pxにする */
+body {
+    font-size: 1.125rem;
 }
 
 /* 見出し 太字のリセット(清潔感を出すため) */
@@ -13,6 +23,10 @@ h1, h2, h3, h4 {
 /* ヘッダー高さ調整 */
 header, nav {
     height: 80px;
+}
+/* ヘッダー画像を48pxに合わせる */
+header img {
+    height: 48px;
 }
 
 #main-visual {
@@ -41,15 +55,46 @@ header, nav {
     opacity: 0.0;
 }
 
+/* コンテナを使ったときに、上下内側に余白をつける */
+.container {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* サブタイトルの文字サイズと余白を調整 */
 .subtitle {
+    /* marginなどの余白を適用するためにinline-blockにする */
+    display: inline-block;
     font-size: 1.2em;
-    padding-top: 2.5em;
     margin-bottom: .5em;
 }
 
-
+/* 画像の横幅を調整 */
 #feature img {
-    clip-path: circle(42%);
+    /* 画像の縦横比が歪まないように */
     background-size: cover;
-    height: min(25vw, 300px);
+    width: 80%;
+}
+
+/* 枠線つきカード */
+.bordered-card {
+    border: 1px solid;
+    padding: 0 1.5em .5em;
+}
+.bordered-card span {
+    display: block;
+}
+/* 最初のspan要素のみ、枠に重ねて表示 */
+.bordered-card span:first-child {
+    display: inline-block;
+    position: relative;
+    top: -0.75em;
+    /* 外側の余白を取ってから内側の余白を再度取ることで、塗りつぶし範囲を拡大 */
+    margin: -.75em;
+    padding: 0 .75em;
+    background: white;
+    clear: both;
+}
+.bg-light .bordered-card span:first-child {
+    background: #f4f4f4;
 }
