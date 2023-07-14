@@ -29,6 +29,13 @@ header img {
     height: 48px;
 }
 
+/* Bootstrapのボタンの背景色を上書き */
+.btn-dark {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+/* メインビジュアル */
 #main-visual {
     /* 端末の画面の高さに合わせてメインビジュアルの高さを調整 */
     height: calc(100vh - 80px);
@@ -42,6 +49,25 @@ header img {
     position: absolute;
     right: 80px;
     bottom: 80px;
+}
+
+/* サブビジュアル */
+#sub-visual {
+    width: 100%;
+    background-image: url('../img/marvin-meyer-SYTO3xs06fU-unsplash.jpg');
+    background-size: cover;
+}
+#sub-visual .container {
+    /* 背景にぼかしを適用(透明感の実装) */
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    /* このままでは見えにくいので白を加える */
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* 子要素の横幅に合わせる */
+.fit-content {
+    width: fit-content;
 }
 
 /* "visual" メインビジュアル ふんわり表示アニメーション */
@@ -73,6 +99,7 @@ header img {
 #feature img {
     /* 画像の縦横比が歪まないように */
     background-size: cover;
+    
     width: 80%;
 }
 
@@ -97,4 +124,34 @@ header img {
 }
 .bg-light .bordered-card span:first-child {
     background: #f4f4f4;
+}
+
+.sns-icon img {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.right-arrow {
+    display: inline-block;
+    width: 4em;
+    height: 1em;
+    margin-top: 1em;
+    border-top: 1px solid #333333;
+    border-right: 1px solid #333333;
+    transform: skew(-45deg);
+}
+
+.sns-icon img {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.right-arrow {
+    display: inline-block;
+    width: 4em;
+    height: 1em;
+    margin-top: 1em;
+    border-top: 1px solid #333333;
+    border-right: 1px solid #333333;
+    transform: skew(-45deg);
 }
