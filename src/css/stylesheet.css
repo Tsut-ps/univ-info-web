@@ -90,9 +90,9 @@ header img {
 /* サブタイトルの文字サイズと余白を調整 */
 .subtitle {
     /* marginなどの余白を適用するためにinline-blockにする */
-    display: inline-block;
+    display: block;
     font-size: 1.2em;
-    margin-bottom: .5em;
+    margin-bottom: .25em;
 }
 
 /* 画像の横幅を調整 */
