@@ -34,6 +34,10 @@ header img {
     background-color: #333333;
     border-color: #333333;
 }
+.btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+}
 
 /* メインビジュアル */
 #main-visual {
@@ -43,12 +47,52 @@ header img {
     width: 100%;
     /* 画像の縦横比が歪まないように */
     object-fit: cover;
-    margin-bottom: 80px;
 }
-#main-visual div {
+.message {
+    display: flex;
+    font-size: .85em;
+    /* 縦に並べて表示 */
+    flex-direction: column;
     position: absolute;
-    right: 80px;
-    bottom: 80px;
+    right: 0;
+    bottom: 100px;
+    /* 画面横幅サイズで左右の余白を決める */
+    margin: 0 4vw;
+    /* 背景にぼかしを適用(透明感の実装) */
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    /* このままでは見えにくいので白を加える */
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#scroll {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    /* 背景と差をつけるために合成モードを適用 */
+    mix-blend-mode: difference;
+    /* 画面下部に配置 */
+    bottom: 50px;
+    /* 画面中央に配置 */
+    left: 50%;
+    /* 軸を中央にする */
+    translate: -50% -50%;
+    font-size: 1em;
+    color: #ffffff;
+}
+#scroll::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    margin: 2em;
+    width: 1px;
+    height: 104px;
+    background-color: #ffffff;
+}
+
+#news .badge {
+    /* 整列をするためにバッジの不揃いを調整 */
+    width: 8em;
 }
 
 /* サブビジュアル */
@@ -63,6 +107,29 @@ header img {
     -webkit-backdrop-filter: blur(40px);
     /* このままでは見えにくいので白を加える */
     background-color: rgba(255, 255, 255, 0.7);
+}
+/* 右矢印(→)を定義 */
+.right-arrow {
+    display: inline-block;
+    width: 4em;
+    height: 1em;
+    margin-top: 1em;
+    border-top: 1px solid #333333;
+    border-right: 1px solid #333333;
+    transform: skew(-45deg);
+}
+/* ホバー時にちょっと動かすアニメーション */
+.move:hover {
+    padding-left: 4rem !important;
+    transition: 1s;
+}
+#mini-visual {
+    position: absolute;
+    top: -16px;
+    left: 40%;
+    height: 250px;
+    object-fit: cover;
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 
 /* 子要素の横幅に合わせる */
@@ -99,7 +166,6 @@ header img {
 #feature img {
     /* 画像の縦横比が歪まないように */
     background-size: cover;
-    
     width: 80%;
 }
 
@@ -126,32 +192,14 @@ header img {
     background: #f4f4f4;
 }
 
+/* SNSアイコンの大きさを調整 */
 .sns-icon img {
     height: 2.5em;
     width: 2.5em;
 }
 
-.right-arrow {
-    display: inline-block;
-    width: 4em;
-    height: 1em;
-    margin-top: 1em;
-    border-top: 1px solid #333333;
-    border-right: 1px solid #333333;
-    transform: skew(-45deg);
-}
+/* ----- 資料請求ページに適用されるCSS ----- */
 
-.sns-icon img {
-    height: 2.5em;
-    width: 2.5em;
-}
-
-.right-arrow {
-    display: inline-block;
-    width: 4em;
-    height: 1em;
-    margin-top: 1em;
-    border-top: 1px solid #333333;
-    border-right: 1px solid #333333;
-    transform: skew(-45deg);
+#document-page #main-visual {
+    height: 40vh;
 }
