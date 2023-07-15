@@ -20,7 +20,8 @@ const getMimeType = (path) => {
         ".js": "text/javascript",
         ".jpeg": "image/jpeg",
         ".png": "image/png",
-        ".svg": "image/svg+xml"
+        ".svg": "image/svg+xml",
+        ".pdf": "application/pdf"
     };
     // 拡張子にマッチするMIMEタイプを返す
     for (let key in mimeList) {
