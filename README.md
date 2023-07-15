@@ -26,9 +26,13 @@ Server running at http://127.0.0.1:3124/
   - https://ja.vuejs.org/
 - Yaku Han JP
   - https://yakuhanjp.qranoko.jp/
+- Google Map
+  - https://www.google.com/maps
 
 # 使用している画像素材
 - Adobe Stock
   - https://stock.adobe.com/jp/
 - Unsplash
   - https://unsplash.com/ja
+- shigureni
+  - https://www.shigureni.com/
