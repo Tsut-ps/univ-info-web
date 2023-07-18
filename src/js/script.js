@@ -60,7 +60,7 @@ const FooterInfo = {
 }
 
 // 著作者情報を定義
-const copyright = {
+const Copyright = {
 	template: `<!-- フッター(著作) -->
 	<div class="container-fluid py-5 bg-light">
 		<!-- フレックス要素にして中央揃え -->
@@ -87,7 +87,7 @@ Vue.createApp({
 // フッター(著作)の表示
 Vue.createApp({
 	components: {
-		'copyright': copyright
+		'copyright': Copyright
 	}
 }).mount('#footer');
 
