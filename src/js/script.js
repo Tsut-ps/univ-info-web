@@ -42,17 +42,18 @@ const FooterInfo = {
 						〒154-0024 東京都世田谷区四軒茶屋3<br>
 						03-1234-5678</p>
 				</div>
-			<div class="col">
-				<span class="subtitle">公式SNS</span>
-				<div class="sns-icon">
-					<a href="https://twitter.com" class="me-1"><img src="./img/sns-icon/01.svg" alt="東京情芸大学公式SNS"></a>
-					<a href="https://twitter.com" class="me-1"><img src="./img/sns-icon/02.svg" alt="東京情芸大学公式SNS"></a>
-					<a href="https://twitter.com" class="me-1"><img src="./img/sns-icon/03.svg" alt="東京情芸大学公式SNS"></a>
-					<a href="https://twitter.com" class="me-1"><img src="./img/sns-icon/04.svg" alt="東京情芸大学公式SNS"></a>
+				<div class="col">
+					<span class="subtitle">公式SNS</span>
+					<div class="sns-icon">
+						<a href="https://twitter.com" class="me-1"><img src="./img/sns-icon/01.svg" alt="東京情芸大学公式SNS"></a>
+						<a href="https://twitter.com" class="me-1"><img src="./img/sns-icon/02.svg" alt="東京情芸大学公式SNS"></a>
+						<a href="https://twitter.com" class="me-1"><img src="./img/sns-icon/03.svg" alt="東京情芸大学公式SNS"></a>
+						<a href="https://twitter.com" class="me-1"><img src="./img/sns-icon/04.svg" alt="東京情芸大学公式SNS"></a>
+					</div>
+					<span class="subtitle pt-3">学科について</span>
+					<button type="button" class="btn btn-dark me-1 px-3" onclick="location.href='document.html'">資料請求</button>
+					<button type="button" class="btn btn-outline-dark px-3" onclick="location.href='contact.html'">お問い合わせ</button>
 				</div>
-				<span class="subtitle pt-3">学科について</span>
-				<button type="button" class="btn btn-dark me-1 px-3" onclick="location.href='document.html'">資料請求</button>
-				<button type="button" class="btn btn-outline-dark px-3" onclick="location.href='contact.html'">お問い合わせ</button>
 			</div>
 		</div>
 	</div>`
