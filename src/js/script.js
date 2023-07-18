@@ -95,10 +95,10 @@ Vue.createApp({
 	data() {
 		return {	// データを返す
 			images: [	// 画像のパスの配列
-				"../img/AdobeStock_142976730.jpeg",	// 画像のパス 0番目
-				"../img/AdobeStock_274523661.jpeg",	// 画像のパス 1番目
-				"../img/AdobeStock_277272404.jpeg",	// 画像のパス 2番目
-				"../img/AdobeStock_297305477.jpeg",	// 画像のパス 3番目
+				"./img/AdobeStock_142976730.jpeg",	// 画像のパス 0番目
+				"./img/AdobeStock_274523661.jpeg",	// 画像のパス 1番目
+				"./img/AdobeStock_277272404.jpeg",	// 画像のパス 2番目
+				"./img/AdobeStock_297305477.jpeg",	// 画像のパス 3番目
 			],
 			currentImage: "../img/AdobeStock_142976730.jpeg",	// デフォルトの画像のパス
 			index: 0,	// 画像のインデックス(初回は0番目を表示)
