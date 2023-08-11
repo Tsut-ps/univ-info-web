@@ -2,6 +2,7 @@
 
 ![image](https://github.com/Tsut-ps/univ-info-web/assets/73014392/d26403ef-9cbc-44b7-8c7f-9feb8390193d)
 
+## Node.jsで動かす
 Node.jsで動かすことができます。以下のコマンドで実行可能です。
 ```
 > node .\index.js
