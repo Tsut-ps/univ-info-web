@@ -26,7 +26,7 @@ Server running at http://127.0.0.1:3124/
   - https://nodejs.org/ja
 - Bootstrap
   - https://getbootstrap.jp/
-- Vue.js (Options API)
+- Vue.js（Options API）
   - https://ja.vuejs.org/
 - Yaku Han JP
   - https://yakuhanjp.qranoko.jp/
@@ -36,6 +36,7 @@ Server running at http://127.0.0.1:3124/
 # 使用している画像素材
 - Adobe Stock
   - https://stock.adobe.com/jp/
+  - ライセンスの制約上、公開（public）するにあたり削除済み
 - Unsplash
   - https://unsplash.com/ja
 - shigureni
