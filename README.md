@@ -2,6 +2,9 @@
 
 ![スクリーンショット](https://github.com/Tsut-ps/univ-info-web/assets/73014392/87064ce3-3080-434a-ba38-c423befb0b6f)
 
+## 改修中
+現在、SFCとComposition APIを使って書き直しています。
+
 ## Node.jsで動かす
 別のブランチで、Nodeで動かすことができます。
 → https://github.com/Tsut-ps/univ-info-web/tree/node
