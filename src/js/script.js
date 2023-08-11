@@ -96,12 +96,12 @@ Vue.createApp({
 	data() {
 		return {	// データを返す
 			images: [	// 画像のパスの配列
-				"./img/AdobeStock_142976730.jpeg",	// 画像のパス 0番目
-				"./img/AdobeStock_274523661.jpeg",	// 画像のパス 1番目
-				"./img/AdobeStock_277272404.jpeg",	// 画像のパス 2番目
-				"./img/AdobeStock_297305477.jpeg",	// 画像のパス 3番目
+				"./img/marvin-meyer-SYTO3xs06fU-unsplash.jpg",	// 画像のパス 0番目
+				"./img/ux-indonesia-qC2n6RQU4Vw-unsplash.jpg",	// 画像のパス 1番目
+				"./img/mimi-thian-tkFRFunRDbw-unsplash.jpg",	// 画像のパス 2番目
+				"./img/annie-spratt-FSFfEQkd1sc-unsplash.jpg",	// 画像のパス 3番目
 			],
-			currentImage: "../img/AdobeStock_142976730.jpeg",	// デフォルトの画像のパス
+			currentImage: "./img/marvin-meyer-SYTO3xs06fU-unsplash.jpg",	// デフォルトの画像のパス
 			index: 0,	// 画像のインデックス(初回は0番目を表示)
 		};
 	},
@@ -170,7 +170,7 @@ Vue.createApp({
 		return {
 			events: [
 				{
-					image: './img/AdobeStock_274523661.jpeg',
+					image: './img/mad-fish-digital---kXIg5yOHo-unsplash.jpg',
 					subtitle: '学科イベント',
 					title: 'メディア意見交換会(2023)',
 					text: `7/10(月)～7/13(木) ｜ 四茶キャンパス2号館2階メディアホール`
@@ -192,7 +192,7 @@ Vue.createApp({
 		return {
 			years: [
 				{
-					image: './img/AdobeStock_178578342.jpeg',
+					image: './img/maury-page-QeJ943yEd1E-unsplash.jpg',
 					alt: 'ウィンドウに図形を合わせている写真',
 					subtitle: '1年生',
 					title: 'デザインの基礎を学ぶ',
@@ -201,7 +201,7 @@ Vue.createApp({
 					そのために、相手の属性や使用するタイミングを考慮し、相手に伝わるようなデザインにすることから学びます。`
 				},
 				{
-					image: './img/AdobeStock_297305477.jpeg',
+					image: './img/marten-bjork-rH8O0FHFpfw-unsplash.jpg',
 					alt: 'パソコンの前で作業をしている写真',
 					subtitle: '2年生',
 					title: 'クリエイティブな表現を学ぶ',
