@@ -21,7 +21,7 @@ Server running at http://127.0.0.1:3124/
 
 の2点をデバッグ用でターミナル上に出力しています（開発用）。
 
-# 使用している技術
+## 使用している技術
 - Node.js
   - https://nodejs.org/ja
 - Bootstrap
@@ -33,7 +33,7 @@ Server running at http://127.0.0.1:3124/
 - Google Map
   - https://www.google.com/maps
 
-# 使用している画像素材
+## 使用している画像素材
 - Adobe Stock
   - https://stock.adobe.com/jp/
   - ライセンスの制約上、公開（public）するにあたり削除済み
