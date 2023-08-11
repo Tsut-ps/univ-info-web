@@ -1,4 +1,4 @@
-# 架空の大学の学科専用Webページ
+# 架空の大学の学科専用Webページ（Web版）
 
 ![スクリーンショット](https://github.com/Tsut-ps/univ-info-web/assets/73014392/87064ce3-3080-434a-ba38-c423befb0b6f)
 
