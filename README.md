@@ -22,7 +22,7 @@ Server running at http://127.0.0.1:3124/
   - https://nodejs.org/ja
 - Bootstrap
   - https://getbootstrap.jp/
-- Vue.js
+- Vue.js (Options API)
   - https://ja.vuejs.org/
 - Yaku Han JP
   - https://yakuhanjp.qranoko.jp/
