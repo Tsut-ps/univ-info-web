@@ -27,17 +27,19 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import eventImg1 from '../img/mad-fish-digital---kXIg5yOHo-unsplash.jpg'
+import eventImg2 from '../img/paul-einerhand-Dy6a8sLrVl4-unsplash.jpg'
 
 const events = ref([
     {
-        image: './src/img/mad-fish-digital---kXIg5yOHo-unsplash.jpg',
+        image: eventImg1,
         alt: '話し合っている画像',
         subtitle: '学科イベント',
         title: 'メディア意見交換会(2023)',
         text: `7/10(月)～7/13(木) ｜ 四茶キャンパス2号館2階メディアホール`
     },
     {
-        image: './src/img/paul-einerhand-Dy6a8sLrVl4-unsplash.jpg',
+        image: eventImg2,
         alt: '昨年のライブイベントの画像',
         subtitle: '学園祭',
         title: '情芸祭',

@@ -25,20 +25,23 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import icon1 from '../img/icon/624bd4fb51d7e5589581b6c2_94.png'
+import icon2 from '../img/icon/6099119905dc8225f36ebb25_69.png'
+import icon3 from '../img/icon/61bf0bf71586ad574bdea9ae_9.png'
 
 const cels = ref([
     {
-        icon: './src/img/icon/624bd4fb51d7e5589581b6c2_94.png',
+        icon: icon1,
         title: 'デジタル×クリエイティブ',
         text: `情報メディアに特化し<br>創造力と表現力を伸ばす学科。`
     },
     {
-        icon: './src/img/icon/6099119905dc8225f36ebb25_69.png',
+        icon: icon2,
         title: '演習重視',
         text: '先進的なカリキュラムでスキルを学び<br>アクティブラーニングで学びを深める。'
     },
     {
-        icon: './src/img/icon/61bf0bf71586ad574bdea9ae_9.png',
+        icon: icon3,
         title: '環境の充実',
         text: 'プロが現場で使っている環境を<br>自由に使える環境を構築。'
     },

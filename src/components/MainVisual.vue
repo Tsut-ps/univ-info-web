@@ -23,15 +23,19 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import mainImg1 from '../img/marvin-meyer-SYTO3xs06fU-unsplash.jpg'
+import mainImg2 from '../img/ux-indonesia-qC2n6RQU4Vw-unsplash.jpg'
+import mainImg3 from '../img/mimi-thian-tkFRFunRDbw-unsplash.jpg'
+import mainImg4 from '../img/annie-spratt-FSFfEQkd1sc-unsplash.jpg'
 
 const images = ref([
-    { src: "./src/img/marvin-meyer-SYTO3xs06fU-unsplash.jpg" },	// 画像のパス 0番目
-	{ src: "./src/img/ux-indonesia-qC2n6RQU4Vw-unsplash.jpg" },	// 画像のパス 1番目
-	{ src: "./src/img/mimi-thian-tkFRFunRDbw-unsplash.jpg" },	   // 画像のパス 2番目
-	{ src: "./src/img/annie-spratt-FSFfEQkd1sc-unsplash.jpg" },	// 画像のパス 3番目
+    { src: mainImg1 },	// 画像のパス 0番目
+	{ src: mainImg2 },	// 画像のパス 1番目
+	{ src: mainImg3 },	   // 画像のパス 2番目
+	{ src: mainImg4 },	// 画像のパス 3番目
 ])
 
-const currentImage = ref("./src/img/marvin-meyer-SYTO3xs06fU-unsplash.jpg") // デフォルトの画像のパス
+const currentImage = ref(mainImg1) // デフォルトの画像のパス
 const index = ref(0)    // 画像のインデックス
 
 // setup 自体が beforeCreate / created のライフサイクルで実行されるため

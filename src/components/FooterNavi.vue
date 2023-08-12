@@ -29,27 +29,31 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import snsImg1 from '../img/sns-icon/02.svg'
+import snsImg2 from '../img/sns-icon/03.svg'
+import snsImg3 from '../img/sns-icon/01.svg'
+import snsImg4 from '../img/sns-icon/04.svg'
 
 const snsLinks = ref([
     {
         name: 'Twitter',
         url: 'https://twitter.com',
-        image: './src/img/sns-icon/02.svg'
+        image: snsImg1
     },
     {
         name: 'Facebook',
         url: 'https://facebook.com',
-        image: './src/img/sns-icon/03.svg'
+        image: snsImg2
     },
     {
         name: 'Instagram',
         url: 'https://instagram.com',
-        image: './src/img/sns-icon/01.svg'
+        image: snsImg3
     },
     {
         name: 'YouTube',
         url: 'https://youtube.com',
-        image: './src/img/sns-icon/04.svg'
+        image: snsImg4
     }
 ])
 </script>
