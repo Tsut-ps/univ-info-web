@@ -1,9 +1,15 @@
-# 架空の大学の学科専用Webページ（工事中）
+# 架空の大学の学科専用Webページ（Vite）
 
 ![スクリーンショット](https://github.com/Tsut-ps/univ-info-web/assets/73014392/87064ce3-3080-434a-ba38-c423befb0b6f)
 
-## 改修中
-現在、SFCとComposition APIを使って書き直しています。
+## Vue.js × Vite × Vue Router × TypeScript
+VueのComposition APIを使ってSFCを作成し、それぞれのコンポーネントをApp.vueでまとめて、表示しています。
+
+特徴
+- Viteを使っているので、devにて爆速で開発できる
+- SFCでパーツごとに分けているため、コンポーネントで使いまわしできる
+- buildすればGitHub Pagesにパブリッシュできる（右側リンクより公開中）
+- 遷移しても、必要な部分だけ再描画（チラつきを低減）
 
 ## Node.jsで動かす
 別のブランチで、Nodeで動かすことができます。
