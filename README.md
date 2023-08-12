@@ -1,4 +1,4 @@
-# 架空の大学の学科専用Webページ
+# 架空の大学の学科専用Webページ（工事中）
 
 ![スクリーンショット](https://github.com/Tsut-ps/univ-info-web/assets/73014392/87064ce3-3080-434a-ba38-c423befb0b6f)
 
@@ -14,8 +14,10 @@
   - https://nodejs.org/ja
 - Bootstrap
   - https://getbootstrap.jp/
-- Vue.js（Options API）
+- Vue.js（Composition API）
   - https://ja.vuejs.org/
+- Vite
+  - https://ja.vitejs.dev/
 - Yaku Han JP
   - https://yakuhanjp.qranoko.jp/
 - Google Map
