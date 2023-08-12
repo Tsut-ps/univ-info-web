@@ -25,9 +25,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import icon1 from '../img/icon/624bd4fb51d7e5589581b6c2_94.png'
-import icon2 from '../img/icon/6099119905dc8225f36ebb25_69.png'
-import icon3 from '../img/icon/61bf0bf71586ad574bdea9ae_9.png'
+import icon1 from '@/img/icon/624bd4fb51d7e5589581b6c2_94.png'
+import icon2 from '@/img/icon/6099119905dc8225f36ebb25_69.png'
+import icon3 from '@/img/icon/61bf0bf71586ad574bdea9ae_9.png'
 
 const cels = ref([
     {

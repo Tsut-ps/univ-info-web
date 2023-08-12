@@ -23,10 +23,10 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import mainImg1 from '../img/marvin-meyer-SYTO3xs06fU-unsplash.jpg'
-import mainImg2 from '../img/ux-indonesia-qC2n6RQU4Vw-unsplash.jpg'
-import mainImg3 from '../img/mimi-thian-tkFRFunRDbw-unsplash.jpg'
-import mainImg4 from '../img/annie-spratt-FSFfEQkd1sc-unsplash.jpg'
+import mainImg1 from '@/img/marvin-meyer-SYTO3xs06fU-unsplash.jpg'
+import mainImg2 from '@/img/ux-indonesia-qC2n6RQU4Vw-unsplash.jpg'
+import mainImg3 from '@/img/mimi-thian-tkFRFunRDbw-unsplash.jpg'
+import mainImg4 from '@/img/annie-spratt-FSFfEQkd1sc-unsplash.jpg'
 
 const images = ref([
     { src: mainImg1 },	// 画像のパス 0番目
@@ -51,15 +51,6 @@ setInterval(() => {
 
 
 <style scoped>
-/* メインビジュアル */
-#main-visual {
-    /* 端末の画面の高さに合わせてメインビジュアルの高さを調整 */
-    height: calc(100vh - 80px);
-    /* 画面横いっぱいに表示 */
-    width: 100%;
-    /* 画像の縦横比が歪まないように */
-    object-fit: cover;
-}
 .message {
     display: flex;
     font-size: .85em;
@@ -101,16 +92,5 @@ setInterval(() => {
     width: 1px;
     height: 104px;
     background-color: #ffffff;
-}
-
-/* "visual" メインビジュアル ふんわり表示アニメーション */
-.visual-enter-active, .visual-leave-active {
-    transition: opacity 1s;
-}
-.visual-leave-active {
-    position: absolute;
-}
-.visual-enter-from, .visual-leave-to {
-    opacity: 0.0;
 }
 </style>

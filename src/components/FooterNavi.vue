@@ -18,8 +18,12 @@
                         </template>
                     </div>
                     <span class="subtitle pt-3">学科について</span>
-                    <button type="button" class="btn btn-dark me-1 px-3" onclick="location.href='document.html'">資料請求</button>
-                    <button type="button" class="btn btn-outline-dark px-3" onclick="location.href='contact.html'">お問い合わせ</button>
+                    <RouterLink to="/document">
+                        <button type="button" class="btn btn-dark me-1 px-3">資料請求</button>
+                    </RouterLink>
+                    <RouterLink to="/contact">
+                        <button type="button" class="btn btn-outline-dark px-3">お問い合わせ</button>
+                    </RouterLink>
                 </div>
             </div>
         </div>
@@ -29,10 +33,10 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import snsImg1 from '../img/sns-icon/02.svg'
-import snsImg2 from '../img/sns-icon/03.svg'
-import snsImg3 from '../img/sns-icon/01.svg'
-import snsImg4 from '../img/sns-icon/04.svg'
+import snsImg1 from '@/img/sns-icon/02.svg'
+import snsImg2 from '@/img/sns-icon/03.svg'
+import snsImg3 from '@/img/sns-icon/01.svg'
+import snsImg4 from '@/img/sns-icon/04.svg'
 
 const snsLinks = ref([
     {
@@ -64,5 +68,8 @@ const snsLinks = ref([
 .sns-icon img {
     height: 2.5em;
     width: 2.5em;
+}
+a {
+    text-decoration: none;
 }
 </style>

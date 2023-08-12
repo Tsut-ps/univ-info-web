@@ -15,8 +15,8 @@
 </template>
 
 <script setup lang="ts">
-import miniVisualImg from '../img/krisztian-tabori-IyaNci0CyRk-unsplash.jpg'
-import backVisualImg from '../img/marvin-meyer-SYTO3xs06fU-unsplash.jpg'
+import miniVisualImg from '@/img/krisztian-tabori-IyaNci0CyRk-unsplash.jpg'
+import backVisualImg from '@/img/marvin-meyer-SYTO3xs06fU-unsplash.jpg'
 </script>
 
 <style scoped>

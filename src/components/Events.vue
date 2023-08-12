@@ -27,8 +27,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import eventImg1 from '../img/mad-fish-digital---kXIg5yOHo-unsplash.jpg'
-import eventImg2 from '../img/paul-einerhand-Dy6a8sLrVl4-unsplash.jpg'
+import eventImg1 from '@/img/mad-fish-digital---kXIg5yOHo-unsplash.jpg'
+import eventImg2 from '@/img/paul-einerhand-Dy6a8sLrVl4-unsplash.jpg'
 
 const events = ref([
     {

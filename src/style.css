@@ -64,8 +64,3 @@ h1, h2, h3, h4 {
 .bg-light .bordered-card span:first-child {
     background: #f4f4f4;
 }
-
-/* ----- 資料請求ページに適用されるCSS ----- */
-#document-page #main-visual {
-    height: 40vh;
-}
