@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: './',
+  base: '/univ-info-web/',
   build: {
     outDir: './docs',
   },
