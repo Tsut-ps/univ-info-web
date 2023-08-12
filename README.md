@@ -14,8 +14,10 @@
   - https://nodejs.org/ja
 - Bootstrap
   - https://getbootstrap.jp/
-- Vue.js（Options API）
+- Vue.js（Composition API）
   - https://ja.vuejs.org/
+- Vite
+  - https://ja.vitejs.dev/
 - Yaku Han JP
   - https://yakuhanjp.qranoko.jp/
 - Google Map
