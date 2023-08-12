@@ -30,10 +30,14 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import yearImg1 from '../img/maury-page-QeJ943yEd1E-unsplash.jpg'
+import yearImg2 from '../img/marten-bjork-rH8O0FHFpfw-unsplash.jpg'
+import yearImg3 from '../img/marvin-meyer-SYTO3xs06fU-unsplash.jpg'
+import yearImg4 from '../img/libby-penner-8zsBofKrhP8-unsplash.jpg'
 
 const years = ref([
     {
-        image: './src/img/maury-page-QeJ943yEd1E-unsplash.jpg',
+        image: yearImg1,
         alt: 'ウィンドウに図形を合わせている写真',
         subtitle: '1年生',
         title: 'デザインの基礎を学ぶ',
@@ -42,7 +46,7 @@ const years = ref([
 		そのために、相手の属性や使用するタイミングを考慮し、相手に伝わるようなデザインにすることから学びます。`
     },
     {
-        image: './src/img/marten-bjork-rH8O0FHFpfw-unsplash.jpg',
+        image: yearImg2,
         alt: 'パソコンの前で作業をしている写真',
         subtitle: '2年生',
         title: 'クリエイティブな表現を学ぶ',
@@ -51,7 +55,7 @@ const years = ref([
 		そこで、要素同士を「かけ合わせる」ことで、より独創的な表現を生み出していくにはどうすればよいかを学びます。`
     },
     {
-        image: './src/img/marvin-meyer-SYTO3xs06fU-unsplash.jpg',
+        image: yearImg3,
         alt: 'チームワークで作業をしている写真',
         subtitle: '3年生',
         title: '学びを応用・実践する',
@@ -60,7 +64,7 @@ const years = ref([
 		また、社会の中でデザインがどのように溶け込み、どう機能しているかを調べ、表現力を高めていきます。`
     },
     {
-        image: './src/img/libby-penner-8zsBofKrhP8-unsplash.jpg',
+        image: yearImg4,
         alt: 'マルチメディア機器を操作している写真',
         subtitle: '4年生',
         title: 'プロのクリエイターへ',
