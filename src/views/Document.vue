@@ -15,7 +15,7 @@
                     当学科（デジタルメディア学科）の資料は、以下からダウンロードしてください。</p>
                 <h3 class="mt-5">2023年度 - デジタルメディア学科</h3>
                 <button type="button" class="btn btn-dark me-1 px-3"
-                    onclick="location.href='/pdf/tidu-iddm-document.pdf'">資料ダウンロード</button>
+                    onclick="location.href='@/pdf/tidu-iddm-document.pdf'">資料ダウンロード</button>
             </div>
         </article>
     </main>
