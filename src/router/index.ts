@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import Access from '../views/Access.vue'
+import Contact from '../views/Contact.vue'
+import Document from '../views/Document.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,17 +15,17 @@ const router = createRouter({
     {
       path: '/access',
       name: 'access',
-      component: () => import('../views/Access.vue')
+      component: Access
     },
     {
       path: '/contact',
       name: 'contact',
-      component: () => import('../views/Contact.vue')
+      component: Contact
     },
     {
       path: '/document',
       name: 'document',
-      component: () => import('../views/Document.vue')
+      component: Document
     }
   ],
   /* 遷移時にトップへスクロール */
