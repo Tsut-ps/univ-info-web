@@ -5,6 +5,8 @@
 ## Vue.js × Vite × Vue Router × TypeScript
 VueのComposition APIを使ってSFCを作成し、それぞれのコンポーネントをApp.vueでまとめて、表示しています。
 
+※大学院用の別ページは用意していないため、押しても何も起きません。
+
 ## 特徴
 - Viteを使っているので、devにて爆速で開発できる
 - SFCでパーツごとに分けているため、コンポーネントで使いまわしできる
