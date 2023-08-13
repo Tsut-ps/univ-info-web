@@ -8,9 +8,11 @@
   <link rel="icon" type="image/png" href="./src/img/logo/TIDU_logo.png">
   <title>ディジタルメディア学科 - 東京情芸大学</title>
   <script>
-    // URLの末尾のディレクトリ名に「./?=」を付けてリダイレクトする
+    // SPAページはルートディレクトリ以外のページのとき、リロードすると404エラーが出る
+    // → URLの末尾のディレクトリ名に「./#」を付けてリダイレクトする
+    // → リダイレクト先のページで、URLの末尾のディレクトリ名を取得して再度リダイレクトする
     const dir = window.location.pathname.split('/').slice(-1);
-    location.href = './?p=' + dir;
+    location.href = './#' + dir;
   </script>
 </head>
 
