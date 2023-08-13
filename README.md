@@ -16,8 +16,8 @@ VueのComposition APIを使ってSFCを作成し、それぞれのコンポー�
 → https://github.com/Tsut-ps/univ-info-web/tree/node
 
 ## 使用している技術
-- Node.js
-  - https://nodejs.org/ja
+- npm
+  - https://www.npmjs.com/
 - Bootstrap
   - https://getbootstrap.jp/
 - Vue.js（Composition API）
