@@ -5,7 +5,7 @@
 ## Vue.js × Vite × Vue Router × TypeScript
 VueのComposition APIを使ってSFCを作成し、それぞれのコンポーネントをApp.vueでまとめて、表示しています。
 
-特徴
+## 特徴
 - Viteを使っているので、devにて爆速で開発できる
 - SFCでパーツごとに分けているため、コンポーネントで使いまわしできる
 - buildすればGitHub Pagesにパブリッシュできる（右側リンクより公開中）
@@ -38,42 +38,35 @@ VueのComposition APIを使ってSFCを作成し、それぞれのコンポー�
 - shigureni
   - https://www.shigureni.com/
 
-## Vue 3 + TypeScript + Vite
+## 環境構築
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### IDEのセットアップ（推奨）
 
-### Recommended IDE Setup
+- [VS Code](https://code.visualstudio.com/)
+- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Configの設定
 
-### Type Support For `.vue` Imports in TS
+[Viteの設定（公式リファレンス）](https://ja.vitejs.dev/config/) を参照。
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+### プロジェクトのセットアップ
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 開発用に実行
+コンパイルと即時適用（ホットリロード）をします。
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### 本番用にビルド
+型チェックとコンパイル、最小化をします。
+
+`/docs`フォルダに生成されます。
 
 ```sh
 npm run build
