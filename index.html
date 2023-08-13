@@ -17,9 +17,8 @@
     // → 見つからない場合、GitHubだと404.htmlにリダイレクトされるため、まずURLの末尾のディレクトリ名に「./#」を付けてリダイレクトする
     // → リダイレクト先のページ(ここ)で、URLの末尾のディレクトリ名を取得して再度リダイレクトする
     const dir = window.location.hash.split('#')[1];
-    // 404.html自体にアクセスしたときはトップページに戻る(ループ防止)
-    if (dir == '404.html') location.href = './';
-    else if (dir !== undefined) location.href = './' + dir;
+    if (window.location.hash) window.history.replaceState(null, null, './' + dir);
+    else window.history.replaceState(null, null, './');
   </script>
 </head>
 
