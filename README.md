@@ -2,8 +2,10 @@
 
 ![スクリーンショット](https://github.com/Tsut-ps/univ-info-web/assets/73014392/87064ce3-3080-434a-ba38-c423befb0b6f)
 
-## Vue.js × Vite × Vue Router × TypeScript
+## Bootstrap × Vue.js × Vite × Vue Router × TypeScript
 VueのComposition APIを使ってSFCを作成し、それぞれのコンポーネントをApp.vueでまとめて、表示しています。
+
+GitHub Pages → https://tsut-ps.github.io/univ-info-web/
 
 ※大学院用の別ページは用意していないため、押しても何も起きません。
 
@@ -14,8 +16,7 @@ VueのComposition APIを使ってSFCを作成し、それぞれのコンポー�
 - SPAのため、遷移しても必要な部分だけ再描画（チラつきを低減）
 
 ## Node.jsで動かす
-別のブランチで、Nodeで動かすことができます。
-→ https://github.com/Tsut-ps/univ-info-web/tree/node
+[別のブランチ](https://github.com/Tsut-ps/univ-info-web/tree/node)を使って、ローカル環境のNodeで動かすことができます。
 
 ## 使用している技術
 - npm
