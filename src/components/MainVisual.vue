@@ -90,7 +90,23 @@ setInterval(() => {
     top: 0;
     margin: 2em;
     width: 1px;
-    height: 104px;
     background-color: #ffffff;
+    animation: scroll-an 1.5s ease-in-out infinite;
+}
+@keyframes scroll-an {
+    0% {
+        top: 0;
+        height: 0;
+        opacity: 0;
+    }
+    30% {
+        height: 48px;
+        opacity: 1;
+    }
+    100% {
+        top: 104px;
+        height: 0;
+        opacity: 0;
+    }
 }
 </style>
