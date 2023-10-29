@@ -22,6 +22,6 @@
     </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import pdfPath from '@/pdf/tidu-iddm-document.pdf'
 </script>
