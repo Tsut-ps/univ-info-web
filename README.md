@@ -31,6 +31,8 @@ GitHub Pages → https://tsut-ps.github.io/univ-info-web/
   - https://yakuhanjp.qranoko.jp/
 - Google Map
   - https://www.google.com/maps
+- GSAP
+  - https://gsap.com/
 
 ## 使用している画像素材
 - Adobe Stock
