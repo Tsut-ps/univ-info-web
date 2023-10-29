@@ -17,6 +17,7 @@ import Copyright from './components/Copyright.vue'
   <Copyright></Copyright>
 </template>
 
+
 <style>
 /* メインビジュアル */
 #main-visual {

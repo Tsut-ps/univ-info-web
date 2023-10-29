@@ -3,11 +3,11 @@
         <!-- 横並びにする / 中央揃え / 下に余白 -->
         <div class="row text-center mb-5">
             <span class="subtitle">FEATURE</span>
-            <h2>学科の特色</h2>
+            <h2 id="feature">学科の特色</h2>
             <!-- [Vue.js] v-forを使ってデータcelsの文だけ繰り返して表示(仮変数celに.xxxxを付けることでプロパティ値にアクセスできる) -->
             <template v-for="cel in cels">
                 <!-- 画面横幅に合わせて幅を調整する -->
-                <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="col-xs-12 col-sm-4 col-md-4 tr-under">
                     <div class="text-center">
                         <!-- 画像を表示 -->
                         <img :src="cel.icon" alt="アイコン">
@@ -24,7 +24,12 @@
 
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+// 画像をインポート
 import icon1 from '@/img/icon/624bd4fb51d7e5589581b6c2_94.png'
 import icon2 from '@/img/icon/6099119905dc8225f36ebb25_69.png'
 import icon3 from '@/img/icon/61bf0bf71586ad574bdea9ae_9.png'
@@ -46,6 +51,25 @@ const cels = ref([
         text: 'プロが現場で使っている環境を<br>自由に使える環境を構築。'
     },
 ])
+
+// コンポーネントがページに紐づいた後に実行(実行タイミングで要素が探せないため)
+onMounted(() => {
+    gsap.fromTo(".tr-under", {
+    y: 40,
+    opacity: 0,
+    }, {
+        y: 0,
+        opacity: 1,
+        duration: .8,
+        stagger: .1,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: "#feature",
+            start: "top center",
+        },
+    });
+})
+
 </script>
 
 
