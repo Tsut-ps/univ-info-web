@@ -1,13 +1,13 @@
 <template>
-    <div class="container">
+    <div class="container" id="feature">
         <!-- 横並びにする / 中央揃え / 下に余白 -->
         <div class="row text-center mb-5">
             <span class="subtitle">FEATURE</span>
-            <h2 id="feature">学科の特色</h2>
+            <h2>学科の特色</h2>
             <!-- [Vue.js] v-forを使ってデータcelsの文だけ繰り返して表示(仮変数celに.xxxxを付けることでプロパティ値にアクセスできる) -->
             <template v-for="cel in cels">
                 <!-- 画面横幅に合わせて幅を調整する -->
-                <div class="col-xs-12 col-sm-4 col-md-4 tr-under">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="text-center">
                         <!-- 画像を表示 -->
                         <img :src="cel.icon" alt="アイコン">
@@ -52,11 +52,12 @@ const cels = ref([
     },
 ])
 
-// コンポーネントがページに紐づいた後に実行(実行タイミングで要素が探せないため)
+// 要素「特色」が真ん中まで来たら中身を順番に表示
+// コンポーネントがページに紐づいた後に実行(実行タイミングによっては要素が探せないため)
 onMounted(() => {
-    gsap.fromTo(".tr-under", {
-    y: 40,
-    opacity: 0,
+    gsap.fromTo("#feature .col-xs-12", {
+        y: 40,
+        opacity: 0,
     }, {
         y: 0,
         opacity: 1,

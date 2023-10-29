@@ -1,6 +1,6 @@
 <template>
     <!-- [Vue.js] 年次ごとに繰り返して表示(1～4年次) -->
-    <div class="container">
+    <div class="container" id="curriculumDetail">
         <template v-for="year in years">
             <!-- 横並びにする / y軸方向の外部余白 -->
             <div class="row my-5">
@@ -29,7 +29,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 /* 以下のように import しないと assets にバンドルされない */
 import yearImg1 from '@/img/maury-page-QeJ943yEd1E-unsplash.jpg'
 import yearImg2 from '@/img/marten-bjork-rH8O0FHFpfw-unsplash.jpg'
@@ -73,4 +77,21 @@ const years = ref([
 		ニーズに合わせて、Webデザインやグラフィックデザイン、映像制作など、自分の得意な分野を活かして作品を作り上げていきます。`
     },
 ])
+
+onMounted(() => {
+    gsap.fromTo("#curriculumDetail div", {
+        x: 16,
+        opacity: 0,
+    }, {
+        x: 0,
+        opacity: 1,
+        duration: .8,
+        stagger: .05,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: "#curriculumDetail",
+            start: "top center",
+        },
+    });
+})
 </script>
