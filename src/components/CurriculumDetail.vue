@@ -79,7 +79,7 @@ const years = ref([
 ])
 
 onMounted(() => {
-    gsap.fromTo("#curriculumDetail div", {
+    gsap.fromTo("#curriculumDetail .col-xs-12", {
         x: 16,
         opacity: 0,
     }, {
