@@ -54,7 +54,7 @@ const events = ref([
 
 // 要素「イベント情報」が真ん中まで来たら中身を順番に表示
 onMounted(() => {
-    gsap.fromTo("#events div", {
+    gsap.fromTo("#events .col-xs-12", {
         x: 16,
         opacity: 0,
     }, {
