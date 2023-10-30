@@ -14,6 +14,7 @@ GitHub Pages → https://tsut-ps.github.io/univ-info-web/
 - SFCでパーツごとに分けているため、コンポーネントで使いまわしできる
 - buildすればGitHub Pagesにパブリッシュできる（右側リンクより公開中）
 - SPAのため、遷移しても必要な部分だけ再描画（チラつきを低減）
+- 読みを邪魔しない、ちょっとしたアニメーション
 
 ## Node.jsで動かす
 [別のブランチ](https://github.com/Tsut-ps/univ-info-web/tree/node)を使って、ローカル環境のNodeで動かすことができます。
