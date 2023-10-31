@@ -31,6 +31,8 @@ import backVisualImg from '@/img/marvin-meyer-SYTO3xs06fU-unsplash.jpg'
     -webkit-backdrop-filter: blur(40px);
     /* このままでは見えにくいので白を加える */
     background-color: rgba(255, 255, 255, 0.7);
+    /* iOS端末で表示したときにabsoluteを使っている要素がずれるのを防ぐ */
+    position: relative;
 }
 
 /* 右矢印(→)を定義 */
