@@ -29,11 +29,11 @@
 import { ref, onMounted } from 'vue'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-
 // 画像を読み込み
 import eventImg1 from '@/img/mad-fish-digital---kXIg5yOHo-unsplash.jpg'
 import eventImg2 from '@/img/paul-einerhand-Dy6a8sLrVl4-unsplash.jpg'
+
+gsap.registerPlugin(ScrollTrigger);
 
 const events = ref([
     {

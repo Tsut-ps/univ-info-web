@@ -32,13 +32,13 @@
 import { ref, onMounted } from 'vue'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-
 /* 以下のように import しないと assets にバンドルされない */
 import yearImg1 from '@/img/maury-page-QeJ943yEd1E-unsplash.jpg'
 import yearImg2 from '@/img/marten-bjork-rH8O0FHFpfw-unsplash.jpg'
 import yearImg3 from '@/img/marvin-meyer-SYTO3xs06fU-unsplash.jpg'
 import yearImg4 from '@/img/libby-penner-8zsBofKrhP8-unsplash.jpg'
+
+gsap.registerPlugin(ScrollTrigger);
 
 const years = ref([
     {

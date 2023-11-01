@@ -27,12 +27,12 @@
 import { ref, onMounted } from 'vue'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-
 // 画像をインポート
 import icon1 from '@/img/icon/624bd4fb51d7e5589581b6c2_94.png'
 import icon2 from '@/img/icon/6099119905dc8225f36ebb25_69.png'
 import icon3 from '@/img/icon/61bf0bf71586ad574bdea9ae_9.png'
+
+gsap.registerPlugin(ScrollTrigger);
 
 const cels = ref([
     {
