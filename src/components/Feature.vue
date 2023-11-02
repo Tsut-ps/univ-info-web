@@ -67,6 +67,7 @@ onMounted(() => {
         scrollTrigger: {
             trigger: "#feature",
             start: "top center",
+            toggleActions: "play none none reverse",
         },
     });
 })

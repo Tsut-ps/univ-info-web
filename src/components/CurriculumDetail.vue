@@ -91,6 +91,7 @@ onMounted(() => {
         scrollTrigger: {
             trigger: "#curriculumDetail",
             start: "top center",
+            toggleActions: "play none none reverse",
         },
     });
 })
