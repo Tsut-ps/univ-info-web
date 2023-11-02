@@ -12,14 +12,6 @@
   <!-- ファビコンの読み込み -->
   <link rel="icon" type="image/png" href="./src/img/logo/TIDU_logo.png">
   <title>ディジタルメディア学科 - 東京情芸大学</title>
-  <script>
-    // SPAページはルート以外のページのとき、リロードすると404エラーが出る(例えば/contact/index.htmlを探してしまう)
-    // → 見つからない場合、GitHubだと404.htmlにリダイレクトされるため、まずURLの末尾のディレクトリ名に「./#」を付けてリダイレクトする
-    // → リダイレクト先のページ(ここ)で、URLの末尾のディレクトリ名を取得して再度リダイレクトする
-    const dir = window.location.hash.split('#')[1];
-    if (window.location.hash) window.history.replaceState(null, null, './' + dir);
-    else window.history.replaceState(null, null, './');
-  </script>
 </head>
 
 <body>
