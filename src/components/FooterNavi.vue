@@ -21,6 +21,9 @@
                     <RouterLink to="/document">
                         <button type="button" class="btn btn-dark me-1 px-3">資料請求</button>
                     </RouterLink>
+                    <RouterLink to="/access">
+                        <button type="button" class="btn btn-outline-dark me-1 px-3">交通アクセス</button>
+                    </RouterLink>
                     <RouterLink to="/contact">
                         <button type="button" class="btn btn-outline-dark px-3">お問い合わせ</button>
                     </RouterLink>
