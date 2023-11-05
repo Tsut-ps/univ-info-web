@@ -1,5 +1,5 @@
 <template>
-    <div id="sub-visual" class="mt-5 py-5" :style="`background-image: url(${backVisualImg})`">
+    <div id="sub-visual" class="mt-5 px-2 py-5" :style="`background-image: url(${backVisualImg})`">
         <!-- コンテナ / フレックス要素で中心揃え / 内側に余白 / 縁を丸くする / ちょっと動くアニメーション / はみ出た部分は非表示(画像) -->
         <div class="container d-flex align-items-center p-5 rounded move overflow-hidden">
             <div class="fit-content me-3">
