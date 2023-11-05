@@ -3,19 +3,19 @@
 	<div class="bg-light">
 		<div id="news" class="container">
 			<!-- 内部の背景色を白に / 四隅を丸くする / 内側の余白を十分に取る -->
-			<div class="bg-white rounded-3 p-5">
+			<div class="bg-white rounded-3 p-4 p-sm-5">
 				<span class="subtitle">NEWS</span>
 				<h2>最新情報</h2>
 				<!-- [Vue.js] v-forを使ってデータinformationsの分だけ繰り返して表示 -->
 				<template v-for="news in informations">
 					<!-- 横並びにする / 上下中央揃え / y軸方向の外部余白 -->
-					<div class="row align-items-center my-4">
+					<div class="row align-items-center mt-4">
 						<!-- 横幅を子要素に合わせる(auto) -->
 						<span class="w-auto me-1">{{ news.date }}</span>
 						<!-- カテゴリをバッジ化 / 丸くする / 背景色黒 / それぞれ余白 -->
 						<span class="badge rounded-pill bg-dark me-1 px-3 py-2">{{ news.category }}</span>
-						<!-- テキストを折り返さない / 文字が要素からはみ出たら三点リーダーで省略する -->
-						<span class="col-xl-auto text-nowrap text-truncate my-1">{{ news.text }}</span>
+						<!-- テキストを2行以上表示しない / 文字が要素からはみ出たら三点リーダーで省略する -->
+						<span class="col-xl-auto line-clamp my-1">{{ news.text }}</span>
 					</div>
 				</template>
 			</div>
