@@ -22,7 +22,7 @@ import Copyright from './components/Copyright.vue'
 /* メインビジュアル */
 #main-visual {
     /* 端末の画面の高さに合わせてメインビジュアルの高さを調整 */
-    height: calc(100vh - 80px);
+    height: calc(100svh - 80px);
     /* 画面横いっぱいに表示 */
     width: 100%;
     /* 画像の縦横比が歪まないように */
