@@ -11,19 +11,19 @@ import GraduateSchool from '../components/GraduateSchool.vue'
 
 
 <template>
-  <main>
-    <MainVisual></MainVisual>
+	<main>
+		<MainVisual></MainVisual>
 
-    <!-- 本文の要素 / 上部に外部余白 -->
-    <article class="mt-5">
-      <About></About>
-      <Feature></Feature>
-      <News></News>
-      <Events></Events>
-      <Curriculum></Curriculum>
-      <CurriculumDetail></CurriculumDetail>
-      <GraduateSchool></GraduateSchool>
-    </article>
+		<!-- 本文の要素 / 上部に外部余白 -->
+		<article class="mt-5">
+			<About></About>
+			<Feature></Feature>
+			<News></News>
+			<Events></Events>
+			<Curriculum></Curriculum>
+			<CurriculumDetail></CurriculumDetail>
+			<GraduateSchool></GraduateSchool>
+		</article>
 
-  </main>
+	</main>
 </template>
