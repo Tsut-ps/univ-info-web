@@ -7,7 +7,7 @@
 				<span class="subtitle">NEWS</span>
 				<h2>最新情報</h2>
 				<!-- [Vue.js] v-forを使ってデータinformationsの分だけ繰り返して表示 -->
-				<template v-for="news in informations">
+				<template v-for="news in informations" :key="news.id">
 					<!-- 横並びにする / 上下中央揃え / y軸方向の外部余白 -->
 					<div class="row align-items-center mt-4">
 						<!-- 横幅を子要素に合わせる(auto) -->
@@ -27,18 +27,29 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const informations = ref([
+interface Information {
+	id: number;
+	date: string;
+	category: string;
+	text: string;
+}
+
+let id = 0
+const informations = ref<Information[]>([
 	{
+		id: id++,
 		date: '2023.07.13',
 		category: 'イベント',
 		text: `きになる研究室は？ 8月の 「オープンキャンパス」 にて一般公開される〝研究室〟をWebで先行紹介中！`
 	},
 	{
+		id: id++,
 		date: '2023.07.10',
 		category: 'イベント',
 		text: '情報メディア学科をもっと知りたい！ 「学科紹介ムービー」 を YouTube にて限定公開中！'
 	},
 	{
+		id: id++,
 		date: '2023.07.06',
 		category: 'お知らせ',
 		text: '情報メディア学科 佐々木さんが「Think! 2023」にて受賞'
@@ -49,8 +60,7 @@ const informations = ref([
 
 <style scoped>
 #news .badge {
-    /* 整列をするためにバッジの不揃いを調整 */
-    width: 8em;
+	/* 整列をするためにバッジの不揃いを調整 */
+	width: 8em;
 }
-
 </style>
